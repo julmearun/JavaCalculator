@@ -2,9 +2,9 @@ ipipeline {
     agent any
 
     stages {
-        stage('git checkout') {
+        stage('build') {
             steps {
-                sh 'git 'https://github.com/julmearun/JavaCalculator.git''
+                sh 'mvn package' 
             }
         }
     }
