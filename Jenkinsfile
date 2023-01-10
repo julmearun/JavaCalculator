@@ -4,7 +4,7 @@ pipeline {
         
         stage ('check out') {
             steps {
-              sh  git 'https://github.com/julmearun/JavaCalculator.git'
+               git 'https://github.com/julmearun/JavaCalculator.git'
             }
         }
         stage('Build') { 
